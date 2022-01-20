@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import CATEGORIES from "../data/categories.json";
-import useFilter from "../states/useFilter";
+import useFilter from "../hooks/useFilter";
 
 const CategoriesFilter: React.FC = () => {
   const { categories } = useFilter();

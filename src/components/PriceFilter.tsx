@@ -1,6 +1,6 @@
 import * as React from "react";
 import MultiRangeSlider from "multi-range-slider-react";
-import useFilter from "../states/useFilter";
+import useFilter from "../hooks/useFilter";
 
 const PriceFilter: React.FC = () => {
   const { minPrice, maxPrice } = useFilter();

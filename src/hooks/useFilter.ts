@@ -5,6 +5,7 @@ interface State {
   minPrice: number;
   maxPrice: number;
   sizes: number[];
+  search: string;
 }
 
 const state = createState<State>({
@@ -12,6 +13,7 @@ const state = createState<State>({
   minPrice: 50,
   maxPrice: 700,
   sizes: [],
+  search: "",
 });
 
 const useFilter = () => {

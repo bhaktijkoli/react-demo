@@ -2,7 +2,7 @@ import clsx from "clsx";
 import * as React from "react";
 
 import SIZES from "../data/sizes.json";
-import useFilter from "../states/useFilter";
+import useFilter from "../hooks/useFilter";
 
 const SizeFilter: React.FC = () => {
   const { sizes } = useFilter();
