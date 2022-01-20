@@ -1,30 +1,38 @@
 .navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  background:#fff;
   display: flex;
-  padding: 16px;
-  border-bottom: 1px solid #d1d1d1;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $border_color;
   .left {
-    flex: 1;
+    width: $sidebar_width;
     display: flex;
     align-items: center;
     height: inherit;
   }
   .right {
     flex: 4;
+    padding: 0px 50px;
   }
   .logo {
-    padding: 0px 10px;
+    padding: 0px 30px;
     font-size: 1rem;
   }
   .search {
     display: flex;
     padding: 10px 14px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid $border_color;
     border-radius: 8px;
     width: inherit;
     transition: border 300ms;
   }
   .search:hover, .search:focus {
-    border: 1px solid #ababab;
+    border: 1px solid $border_color_hover;
   }
   .search input {
     background: none;
@@ -35,10 +43,10 @@
     padding-left: 30px;
   }
   .search svg {
-    color: #d1d1d1;
+    color: $border_color;
     transition: all 300ms;
   }
   .search:hover svg, .search:focus svg {
-    color: #ababab;
+    color: $border_color_hover;
   }
 }
