@@ -3,6 +3,7 @@ import * as React from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import CategoriesFilter from "./CategoriesFilter";
 import PriceFilter from "./PriceFilter";
+import SizeFilter from "./SizeFilter";
 
 const ITEMS = [
   {
@@ -15,6 +16,7 @@ const ITEMS = [
   },
   {
     label: "Size",
+    component: <SizeFilter />,
   },
 ];
 const STATE: Record<string, boolean> = {};

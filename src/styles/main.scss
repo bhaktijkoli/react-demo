@@ -38,3 +38,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* Size */
+.size-filter {
+  display: flex;
+  flex-grow: 4;
+  flex-wrap: wrap;
+  .size-btn {
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    margin: 5px;
+    background: #fff;
+    border: 1px solid $border_color;
+    border-radius: 4px;
+    padding: 8px;
+    transition: all 300ms;
+  }
+  .size-btn.active {
+    background: #f3f3f3;
+  }
+}
