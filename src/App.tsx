@@ -1,7 +1,12 @@
 import * as React from "react";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
-  return <h1>Hello App</h1>;
+  return (
+    <React.Fragment>
+      <Navbar />
+    </React.Fragment>
+  );
 };
 
 export default App;
