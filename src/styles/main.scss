@@ -33,26 +33,8 @@
   padding: 10px 15px;
 }
 
-.category-filter-item {
-  input[type="radio"] {
-    /* remove standard background appearance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* create custom radiobutton appearance */
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    // padding: 3px;
-    /* background-color only for content */
-    background-clip: content-box;
-    border: 1px solid $border_color;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-  
-  /* appearance for checked radiobutton */
-  input[type="radio"]:checked {
-    border: 1px solid black;
-  }
+/* Price */
+.price-range {
+  display: flex;
+  justify-content: space-between;
 }

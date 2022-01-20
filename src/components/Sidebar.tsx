@@ -2,6 +2,7 @@ import clsx from "clsx";
 import * as React from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import CategoriesFilter from "./CategoriesFilter";
+import PriceFilter from "./PriceFilter";
 
 const ITEMS = [
   {
@@ -10,6 +11,7 @@ const ITEMS = [
   },
   {
     label: "Price Range",
+    component: <PriceFilter />,
   },
   {
     label: "Size",

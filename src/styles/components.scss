@@ -44,3 +44,36 @@
     color: #000;
   }
 }
+
+/* Multi Range Slider */
+.multi-range-slider {
+  padding: 10px 10px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  
+  .bar-left, .bar-right {
+    padding: 1px 0px;
+    box-shadow: none;
+    background-color: $border_color;
+  }
+  
+  .bar-inner {
+    padding: 1px 0px;
+    background: $color;
+    box-shadow: none;
+  }
+  
+  .thumb .max-value, .thumb .min-value {
+    display: none;
+  }
+  
+  .thumb::before {
+    margin: -4px;
+    background: $color;
+    border: 1px solid #fff;
+    box-shadow: none;
+    width: 10px;
+    height: 10px;
+  }
+}
