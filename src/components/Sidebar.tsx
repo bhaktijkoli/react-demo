@@ -1,10 +1,12 @@
 import clsx from "clsx";
 import * as React from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import CategoriesFilter from "./CategoriesFilter";
 
 const ITEMS = [
   {
     label: "Categories",
+    component: <CategoriesFilter />,
   },
   {
     label: "Price Range",
@@ -37,7 +39,9 @@ const Sidebar: React.FC = () => {
               {item.label}
               {active === true ? <FiChevronDown /> : <FiChevronUp />}
             </button>
-            <div className={clsx({ "accordian-panel": true, active })}></div>
+            <div className={clsx({ "accordian-panel": true, active })}>
+              {active && item.component && item.component}
+            </div>
           </React.Fragment>
         );
       })}
