@@ -1,5 +1,6 @@
 import * as React from "react";
 import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 import Sidebar from "./components/Sidebar";
 
 const App: React.FC = () => {
@@ -7,6 +8,7 @@ const App: React.FC = () => {
     <React.Fragment>
       <Navbar />
       <Sidebar />
+      <Products />
     </React.Fragment>
   );
 };
