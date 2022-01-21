@@ -47,33 +47,33 @@
 
 /* Multi Range Slider */
 .multi-range-slider {
-  padding: 10px 10px;
-  background: none;
-  box-shadow: none;
-  border: none;
+  padding: 10px 10px !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
   
   .bar-left, .bar-right {
-    padding: 1px 0px;
-    box-shadow: none;
-    background-color: $border_color;
+    padding: 1px 0px !important;
+    box-shadow: none !important;
+    background-color: $border_color !important;
   }
   
   .bar-inner {
-    padding: 1px 0px;
-    background: $color;
-    box-shadow: none;
+    padding: 1px 0px !important;
+    background: $color !important;
+    box-shadow: none !important;
   }
   
   .thumb .max-value, .thumb .min-value {
-    display: none;
+    display: none !important;
   }
   
   .thumb::before {
-    margin: -4px;
-    background: $color;
-    border: 1px solid #fff;
-    box-shadow: none;
-    width: 10px;
-    height: 10px;
+    margin: -4px !important;
+    background: $color !important;
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+    width: 10px !important;
+    height: 10px !important;
   }
 }
