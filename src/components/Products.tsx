@@ -29,7 +29,7 @@ const Products: React.FC = () => {
                   <h3 className="product-name">{product.name}</h3>
                 </div>
                 <div className="product-image">
-                  <img src={product.images[0]} />
+                  <img src={product.images[0]} alt={`${product.name} 1`} />
                 </div>
                 <div className="product-details">
                   <div className="price-details">
@@ -37,8 +37,8 @@ const Products: React.FC = () => {
                     <div className="value">&#36;{product.price}</div>
                   </div>
                   <div className="product-images">
-                    <img src={product.images[1]} />
-                    <img src={product.images[2]} />
+                    <img src={product.images[1]} alt={`${product.name} 2`} />
+                    <img src={product.images[2]} alt={`${product.name} 3`} />
                   </div>
                 </div>
               </div>
